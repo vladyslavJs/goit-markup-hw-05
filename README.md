@@ -1,7 +1,5 @@
 # goit-markup-hw-05
 
-https://vladyslavjs.github.io/goit-markup-hw-05/
-
 my-homework
 Forms
 
