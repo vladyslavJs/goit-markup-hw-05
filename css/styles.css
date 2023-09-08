@@ -533,8 +533,8 @@ button:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-svg {
-    fill: #f4f4fd;
+.footer-size {
+    margin-right: 80px;
 }
 
 .footer-color:hover,
@@ -542,7 +542,62 @@ button:focus {
     background-color: #31d0aa;
 }
 
+/* ___________________ */
+.text-footer {
+    display: block;
+    max-width: 264px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-input::placeholder {
+    color: #FFFFFF;
+}
+
+.footer-button {
+    padding: 0 24px;
+    min-width: 165px;
+    display: flex;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-svg-icon {
+    margin-left: 16px;
+    stroke: white;
+}
 /* REVIEWS */
 
 /* -------------BACKDROP */
@@ -568,15 +623,16 @@ button:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 100;
+    margin: 0 auto;
+    background-color: #fcfcfc;
     width: 408px;
     min-height: 584px;
-    padding: 72px 24px;
     border-radius: 4px;
-    border: 1px solid #000;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #FCFCFC;
-
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
@@ -587,13 +643,24 @@ button:focus {
     top: 24px;
     right: 24px;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
     background-color: #E7E9FC;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon {
-    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button-icon:hover,
+.close-button:focus,
+.close-button-icon:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
 }
 /* -------------/MODAL WINDOW */
 
@@ -712,7 +779,7 @@ button:focus {
     > .review-form-box {
     background-color: #404BBF;
     fill: #F4F4FD;
-    border: 1px solid #404BBF;
+    border: none;
 }
 
 .review-form-checkbox:focus
@@ -721,6 +788,27 @@ button:focus {
         outline: 1px solid #FAFAFA;
 }
 
+.review-form-send {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 169px;
+    height: 56px;
+    color: #FFF;
+    border: none;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-send:hover, 
+.review-form-send:focus {
+    background-color: #404bbf;
+}
 
 
 /* -------------/MODAL-STYLE */
