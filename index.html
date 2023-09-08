@@ -383,7 +383,7 @@
                     digital marketing & growth solutions.</p>
             </div>
 
-            <div>
+            <div class="footer-size">
                 <p class="footer-text-social">Social media</p>
                 <ul class="footer-icon">
                     <li class="footer-icon-item list">
@@ -418,15 +418,29 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="subscribe-input">
+                <p class="text-footer">Subscribe</p>
+                <form class="footer-form">
+                    <label for="" class="subscribe-label">
+                        <input class="footer-input" type="email" name="email line" placeholder="E-mail">
+                    </label>
+                    <button class="footer-button" type="submit">Subscribe
+                        <svg class="footer-svg-icon" width="24" height="24" arial-labe="subscribe icon"></svg>
+                        <use href="./images/icons.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
     <!-- BACKDROP WITH MODAL WINDOW -->
-    <div class="backdrop">
+    <div class="backdrop.is-open">
         <div class="modal">
             <button class="close-button">
                 <svg class="close-button-icon" width="8" height="8" aria-label="modal close icon">
-                    <use href="./images/icons.svg#icon-close"></use>
+                    <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
             <p class="review-form-title">Leave your contacts and we will call you back</p>
@@ -440,7 +454,7 @@
 
                         <svg class="review-form-icon" width="18" height="18" aria-label="user icon">
 
-                            <use href="./images/icons.svg#icon-user"></use>
+                            <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
                     </div>
                 </div>
@@ -453,7 +467,7 @@
 
                         <svg class="review-form-icon" width="18" height="24" aria-label="phone icon">
 
-                            <use href="./images/icons.svg#icon-phone"></use>
+                            <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
                     </div>
                 </div>
@@ -465,7 +479,7 @@
 
                         <svg class="review-form-icon" width="18" height="24" aria-label="email icon">
 
-                            <use href="./images/icons.svg#icon-mail"></use>
+                            <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
                     </div>
                 </div>
@@ -485,12 +499,13 @@
                     <label class="review-form-box-label" for="user-policy">
                         <span class="review-form-box">
                             <svg class="review-form-box-icon" width="10" height="9" aria-label="vector icon">
-                                <use href="./images/icons.svg#icon-vector"></use>
+                                <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the
                         <a class="review-form-link color-link" href="">Privacy Policy</a> </label>
                 </div>
+                <!-- BUTTON WINDOW FORM -->
                 <button class="review-form-send" type="submit">Send</button>
             </form>
         </div>
