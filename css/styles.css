@@ -276,7 +276,6 @@ button {
     justify-content: center;
     height: 112px;
     background-color: #f4f4fd;
-    background-repeat: 4px;
     margin-bottom: 8px;
     border-radius: 4px;
 }
@@ -542,7 +541,7 @@ button {
     background-color: #31d0aa;
 }
 
-/* ___________________ */
+/* ----------FOOTER SUBSCRIBE FORM*/
 .text-footer {
     display: block;
     max-width: 264px;
@@ -570,13 +569,14 @@ button {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-input::placeholder {
     color: #FFFFFF;
 }
 
+/* ----------FOOTER-BUTTON-STYLE */
 .footer-button {
     padding: 0 24px;
     min-width: 165px;
@@ -603,8 +603,10 @@ button {
     margin-left: 16px;
     stroke: white;
 }
-/* REVIEWS */
+/* ----------/FOOTER-BUTTON-STYLE */
+/* ----------/FOOTER SUBSCRIBE FORM*/
 
+/* REVIEWS */
 /* -------------BACKDROP */
 .backdrop {
     position: fixed;
@@ -614,12 +616,10 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-    transition: opacity 500ms linear, visibility 500ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------------/BACKDROP */
 
@@ -639,7 +639,7 @@ button {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* ----------CLOSE-BUTTON-STYLE */
 .close-button {
     display: flex;
     justify-content: center;
@@ -647,9 +647,11 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 8px;
+    padding: 0;
     background-color: #E7E9FC;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -667,9 +669,11 @@ button {
     border: none;
     fill: #ffffff;
 }
+/* ----------/CLOSE-BUTTON-STYLE */
 /* -------------/MODAL WINDOW */
 
 /* -------------MODAL-STYLE */
+/* ---------I-II-III FORM MODAL STYLE*/
 .review-form-title {
     font-size: 16px;
     font-weight: 500;
@@ -681,19 +685,9 @@ button {
 }
 
 .review-form-container {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
-.review-form-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-    margin-bottom: 8px;
-
-}
 
 .review-form-input-container {
     position: relative;
@@ -705,12 +699,13 @@ button {
     border-radius: 4px;
     border: 1px solid #2E2F4266;
     padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-input:focus  {
     border-color: #4D5AE5;
-    outline: transparent;
 }
 
 .review-form-icon {
@@ -726,6 +721,18 @@ button {
 .review-form-input:focus + .review-form-icon {
     fill: #4D5AE5;
 }
+/* ----------/I-II-III FORM MODAL STYLE */
+
+/* ----------FOURTH FORM COMMENTS */
+.review-form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+}
 
 .review-form-comment {
     width: 100%;
@@ -739,7 +746,10 @@ button {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 4px;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -752,11 +762,14 @@ button {
     border-color: #4D5AE5;
     outline: transparent;
 }
+/* ----------/FOURTH FORM COMMENTS */
 
 .review-form-checkbox-container {
     margin-bottom: 24px;
 
 }
+
+/* -----------FIVE FORM CHECKBOX */
 
 .review-form-box {
     display: inline-flex;
@@ -766,10 +779,11 @@ button {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 2px;
     fill: transparent;
     margin-right: 8px;
-} 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .review-form-box-label {
     font-size: 12px;
@@ -792,12 +806,15 @@ button {
     > .review-form-box {
         outline: 1px solid #FAFAFA;
 }
+/* -----------/FIVE FORM CHECKBOX */
+
+/* --------BUTTON-SEND-MODAL */
 
 .review-form-send {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     color: #FFF;
     border: none;
@@ -814,9 +831,9 @@ button {
 .review-form-send:focus {
     background-color: #404bbf;
 }
-
-
+/* --------/BUTTON-SEND-MODAL */
 /* -------------/MODAL-STYLE */
+/* /REVIEWS */
 
 /* -------------JS-MUNIPULATION*/
 .backdrop.is-open {
