@@ -215,10 +215,10 @@ button {
 }
 /* BUTTON-ACTIVE */
 
-button:hover,
+/* button:hover,
 button:focus {
     background-color: #404BBF;
-}
+} */
 
 /* ADVANTAGES SECTION */
 /* visually-patern */
@@ -542,6 +542,10 @@ button:focus {
     background-color: #31d0aa;
 }
 
+
+/* REVIEWS */
+
+/* -------------BACKDROP */
 .backdrop {
     position: fixed;
     top: 0;
@@ -549,7 +553,7 @@ button:focus {
     z-index: 99999;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(46, 47, 66, 0.40);
 
     /* opacity: 0;
     visibility: hidden;
@@ -557,13 +561,9 @@ button:focus {
 
     transition: opacity 500ms linear, visibility 500ms linear;
 }
+/* -------------/BACKDROP */
 
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto; 
-}
-
+/* -------------MODAL WINDOW  */
 .modal {
     position: absolute;
     top: 50%;
@@ -571,14 +571,74 @@ button:focus {
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
-    padding: 40px;
+    padding: 72px 24px;
     border-radius: 4px;
     border: 1px solid #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #fcfcfc;
+    background-color: #FCFCFC;
+}
 
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 8px;
+    background-color: #E7E9FC;
+}
+
+.close-button-icon {
+    fill: #2E2F42;
+}
+/* -------------/MODAL WINDOW */
+
+/* -------------MODAL-STYLE */
+.review-form-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 16px;
+}
+
+.review-form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 8px;
 
 }
+
+.review-form-input {
+    width: 100%;
+}
+
+/* -------------/MODAL-STYLE */
+
+
+
+
+
+
+
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+}
+
+
+
 
 
 
