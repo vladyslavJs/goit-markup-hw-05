@@ -813,13 +813,7 @@ button:focus {
 
 /* -------------/MODAL-STYLE */
 
-
-
-
-
-
-
-
+/* -------------JS-MUNIPULATION*/
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
