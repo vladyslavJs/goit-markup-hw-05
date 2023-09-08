@@ -724,6 +724,11 @@ button {
 /* ----------/I-II-III FORM MODAL STYLE */
 
 /* ----------FOURTH FORM COMMENTS */
+
+.review-form-container-area {
+    margin-bottom: 16px;
+}
+
 .review-form-label {
     display: block;
     font-size: 12px;
