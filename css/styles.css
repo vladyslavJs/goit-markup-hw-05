@@ -544,12 +544,11 @@ button {
 /* ----------FOOTER SUBSCRIBE FORM*/
 .text-footer {
     display: block;
-    max-width: 264px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 
